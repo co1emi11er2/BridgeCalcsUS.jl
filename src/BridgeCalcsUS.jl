@@ -1,8 +1,9 @@
 module BridgeCalcsUS
 
-export A6_6_1_2_2_1
+export A6_6_1_2_2_1, A6_9_4_1_2d1
 
 """
+
     A6_6_1_2_2_1(γ, Δf, ΔF_n)
 
 # Arguments
@@ -28,7 +29,8 @@ end
 - r_s - radius of gyration about the axis normal to the plane of buckling (in.)
 """
 function A6_9_4_1_2d1(E, A_g, K, l, r_s)
-    P_e = (π^2*E)/(K*l/r_s)*A_g
+    P_e = (π^2*E)/(K*l/r_s)^2*A_g
 end
 
 end
+
