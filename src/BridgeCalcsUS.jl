@@ -29,8 +29,10 @@ end
 - r_s - radius of gyration about the axis normal to the plane of buckling (in.)
 """
 function A6_9_4_1_2d1(E, A_g, K, l, r_s)
-    P_e = (π^2*E)/(K*l/r_s)^2*A_g
+    P_e = (π^2*E)/(K*l/r_s)^2*A_g; "AASHTO 6.9.4.1.2-1";
+    return P_e
 end
 
 end
+
 
